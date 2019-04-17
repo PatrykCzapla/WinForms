@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <p>Memory</p>
+    <ul>
+        <li><a href="memory.exe">Aplikacja przykładowa</a></li>
+        <li>
+            Opis:
+            <ul>
+                <li>zadanie polega na napisaniu gry memory</li>
+                <li>użytkowik zaznacza pary kart, jeżeli cyfry na kartach się zgadzaja to dana para znika</li>
+            </ul>
+        </li>
+        <li>
+            Wymagania:
+            <ul>
+                <li>
+                    Główne okno:
+                    <ul>
+                        <li>minimalny rozmiar 500 x 400</li>
+                        <li>okno podzielone na dwie części: dolna stałego rozmiaru (40px) i górna zajmująca resztę miejsca</li>
+                        <li>napis "Memory" na pasku tytułowym okna</li>
+                    </ul>
+                </li>
+                <li>
+                    dolna część okna:
+                    <ul>
+                        <li>zawiera dwa buttony:
+							<ul>
+								<li>Start/Pause
+									<ul>
+										<li>startuje/pauzuje rozgrywkę i odmierzanie czasu</li>
+										<li>tekst odpowiednio zmienia się na 'Start' lub 'Pause' w zalezności od stanu rozgrywki</li>
+									</ul>
+								</li>
+								<li>Reset:
+									<ul>
+										<li>losuje liczby na kartach</li>
+										<li>resetuje rozgrywkę, resetuje czas</li>
+										<li>przywraca schowane przyciski</li>
+									</ul>
+								</li>
+							</ul>						
+						</li>
+						<li>po prawej jest widoczny napis z czasem rozgrywki. Rozmiar czcionki: 14pt</li>						
+                    </ul>
+                </li>
+                <li>
+                    Górna część okna:
+                    <ul>
+                        <li>zawiera planszę 4x4 przycisków</li>
+						<li>styl buttonów:
+							<ul>
+								<li>wnętrze przycisku jest wypełnione kolorem AliceBlue</li>
+								<li>tekst znajduje się na środku. Rozmiar czcionki: 14pt</li>
+								<li>po najechaniu myszką na przycisk kolor wnętrza zmienia się na niebieski</li>
+							</ul>						
+						</li>
+                    </ul>
+                </li>
+				<li>
+					Rozgrywka:
+					<ul>
+						<li>użytkownik zaznacza po dwie karty</li>	
+						<li>po nacisnięciu karta zmienia kolor na IndianRed</li>
+						<li>jeżeli zaznaczy parę o tym samym numerze to dana para znika, jeżeli nie, to rozgrywka toczy się dalej</li>
+						<li>można pauzować</li>										
+						<li>podczas zapauzowania użytkownik nie może zaznaczać par i wstrzymane jest odliczanie czasu</li>
+						<li>po zakończeniu gry wyświetlić odpowiedni dialog z czasem jaki zajęła rozgrywka (win/lost) oraz z pytaniem o ponowną rozgrywkę</li>
+						<li>jeżeli użytkowik naciśnie 'No' aplikacja kończy działanie</li>
+						<li>jeżeli użytkownik naciśnie 'Yes' rozgrywka jest resetowana</li>
+                    </ul>
+				</li>
+            </ul>
+        </li>
+        <li>
+            Uwagi:
+            <ul>
+            	<li>aplikacja jest odporna na skalowanie okna, kontrolki dostosowują się do zmian rozmiaru okna aplikacji</li>
+                <li>w razie niejasności program musi być zgodny z zachowaniem i wyglądem aplikacji przykładowej, jednak nie należy wzorować się na potencjalnych bugach</li>
+            </ul>
+        </li>
+        <li>
+            Wskazówki:
+            <ul>
+                <li>TableLayoutPanel (można je zagnieżdżać!)</li>
+                <li>Dock Fill</li>
+                <li>Anchor Top, Bottom</li>				
+                <li>MouseEnter, MouseLeave</li>
+				<li>TableLayoutPanel.Controls</li>
+				<li>Timer</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            Punktacja:
+            <ul>
+                <li>wygląd aplikacji:</li>
+					<ul>
+						<li>ułożenie 16 przycisków wraz z poprawnym skalowaniem - 2pkt</li>
+						<li>zmiana koloru przycisku po najechaniu i kliknięciu - 2pkt</li>
+						<li>przyciski 'Start', 'Reset' oraz etykieta z czasem rozgrywki (wraz z poprawnym skalowaniem) - 2pkt</li>
+					</ul>
+                <li>logika rozgrywki (dowolny styl przycisków, bez skalowania):</li>
+					<ul>
+						<li>poprawne działanie przycisków 'Start' i 'Reset' (wraz z losowaniem rozłożenia planszy oraz przywracaniem przycisków) - 2pkt</li>
+						<li>zaznaczanie par (znikanie przycisków po wybraniu pary)  - 2pkt</li>
+						<li>odmierzanie czasu rozgrywki - 2pkt</li>
+					</ul>
+            </ul>
+        </li>
+    </ul>    
+    </body>
+</html>
